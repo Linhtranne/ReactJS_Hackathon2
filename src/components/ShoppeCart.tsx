@@ -56,7 +56,6 @@ export default function App() {
     if (savedProducts) {
       setProducts(JSON.parse(savedProducts));
     } else {
-      // If no products are found in local storage, set initial products and save them
       setProducts(initialProducts);
       localStorage.setItem('products', JSON.stringify(initialProducts));
     }
